@@ -4,7 +4,8 @@
 [Ödev 2](#ödev-2)   
 [Ödev 3](#ödev-3)       
 [Ödev 4](#ödev-4)    
-[Ödev 5](#ödev-5)
+[Ödev 5](#ödev-5)     
+[Ödev 6](#ödev-6) 
 ## Ödev 1
 #### 1.film tablosunda bulunan title ve description sütunlarındaki verileri sıralayınız.
 ``` sql 
@@ -118,4 +119,29 @@ WHERE store_id = 1
 ORDER BY last_name DESC
 LIMIT 4;
 ```
+## Ödev 6
+#### 1.film tablosunda bulunan rental_rate sütunundaki değerlerin ortalaması nedir?
+``` sql 
+SELECT AVG(rental_rate) FROM film;
+```
+>Answer: 2.98000
+#### 2.film tablosunda bulunan filmlerden kaçtanesi 'C' karekteri ile başlar?
+``` sql 
+SELECT Count(title) FROM film
+WHERE title LIKE 'C%';
+```
+>Answer: 92
+#### 3.film tablosunda bulunan filmlerden rental_rate değeri 0.99 a eşit olan en uzun (length) film kaç dakikadır?
 
+``` sql 
+SELECT MAX(length) FROM film
+WHERE rental_rate = 0.99 ;
+```
+>Answer: 184
+#### 4.film tablosunda bulunan filmlerin uzunluğu 150 dakikadan büyük olanlarına ait kaç farklı replacement_cost değeri vardır?
+
+``` sql 
+SELECT COUNT(DISTINCT replacement_cost) FROM film
+WHERE length > 150 ;
+```
+>Answer: 21
