@@ -7,7 +7,7 @@
 [Ödev 5](#ödev-5)     
 [Ödev 6](#ödev-6)     
 [Ödev 7](#ödev-7)     
-[Ödev 8](#ödev-8) 
+[Ödev 8](#ödev-8)           
 [Ödev 9](#ödev-9)
 ## Ödev 1
 #### 1.film tablosunda bulunan title ve description sütunlarındaki verileri sıralayınız.
